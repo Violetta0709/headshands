@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+group 'org.veta'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+def slf4jVersion = "2.0.6"
+
+dependencies {
+
+}
+
+test {
+    useJUnitPlatform()
+    systemProperties(System.getProperties())
+}
